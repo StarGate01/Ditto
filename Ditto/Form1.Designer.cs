@@ -30,6 +30,7 @@ namespace Ditto
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStripWindows = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
@@ -37,7 +38,7 @@ namespace Ditto
             // notifyIconMain
             // 
             this.notifyIconMain.ContextMenuStrip = this.contextMenuStripWindows;
-            this.notifyIconMain.Icon = global::Ditto.Properties.Resources.ditto;
+            this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
             this.notifyIconMain.Text = "Ditto";
             this.notifyIconMain.Visible = true;
             this.notifyIconMain.Click += new System.EventHandler(this.notifyIconMain_Click);
@@ -45,18 +46,22 @@ namespace Ditto
             // contextMenuStripWindows
             // 
             this.contextMenuStripWindows.Name = "contextMenuStripWindows";
-            this.contextMenuStripWindows.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStripWindows.Size = new System.Drawing.Size(181, 26);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(150, 100);
             this.Name = "Form1";
             this.Text = "Ditto";
-            this.Icon = global::Ditto.Properties.Resources.ditto;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
 
         }

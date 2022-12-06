@@ -73,9 +73,9 @@ namespace Ditto.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Refresh_16x {
+        internal static System.Drawing.Bitmap FullScreen_16x {
             get {
-                object obj = ResourceManager.GetObject("Refresh_16x", resourceCulture);
+                object obj = ResourceManager.GetObject("FullScreen_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
